@@ -52,9 +52,3 @@ Abaixo está uma prévia da interface do projeto:
    ```bash
    http://localhost:3000
    ```
-
----
-
-## 📝 Licença
-
-Este projeto está sob a licença [MIT](https://opensource.org/licenses/MIT).
