@@ -9,7 +9,7 @@ Este é um projeto que utiliza um scraper para obter informações atualizadas s
 
 Abaixo está uma prévia da interface do projeto:
 
-![Filmes em Cartaz Preview](https://github.com/user-attachments/assets/437eb1c0-f08e-4d0b-bac4-9ae0737abca5)
+![Filmes em Cartaz Preview](https://github.com/user-attachments/assets/4c3028b6-020d-41c8-890c-14ee3bcf8885)
 
 ---
 
