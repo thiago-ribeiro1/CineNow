@@ -58,10 +58,3 @@ Abaixo está uma prévia da interface do projeto:
 ## 📝 Licença
 
 Este projeto está sob a licença [MIT](https://opensource.org/licenses/MIT).
-
----
-
-## 📬 Contato
-
-- **E-mail**: thiago@email.com  
-- **GitHub**: [seuusuario](https://github.com/seuusuario)
