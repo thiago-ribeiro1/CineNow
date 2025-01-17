@@ -1,0 +1,206 @@
+/* Reset e variáveis */
+:root {
+  --primary-bg: #0f0f0f;
+  --card-bg: #1c1c1c;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --accent: #3498db;
+  --gradient-dark: rgba(0, 0, 0, 0.8);
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--primary-bg), #000000);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+/* Container principal */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  padding: 3px;
+  background: linear-gradient(45deg, blue, aliceblue, blue, aliceblue);
+  background-size: 200% 200%;
+  animation: borderAnimation 5s linear infinite;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+/* Título principal */
+.main-title {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0 3rem;
+  background: linear-gradient(45deg, var(--accent), #e74c3c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: titlePulse 2s ease-in-out infinite alternate;
+}
+
+/* Container dos filmes */
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Cards dos filmes */
+.movie-card {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 2/3;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Informações do filme */
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, var(--gradient-dark), transparent);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover .movie-info {
+  transform: translateY(0);
+}
+
+.movie-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+/* Botão de detalhes */
+.details-button {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  background-color: var(--accent);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #2980b9;
+}
+
+/* Animações */
+@keyframes titlePulse {
+  from {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .movies-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 3rem;
+  }
+  
+  .movies-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .movies-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .movie-title {
+    font-size: 1rem;
+  }
+  
+  .details-button {
+    padding: 0.6em 1.2em;
+    font-size: 0.9rem;
+  }
+}
