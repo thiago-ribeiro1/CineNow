@@ -1,7 +1,15 @@
 
 # 🎥 Filmes em Cartaz
 
-Este é um projeto de frontend que utiliza um scraper para obter informações atualizadas sobre os filmes em cartaz no cinema, apresentando-as em uma interface visual e responsiva.
+Este é um projeto que utiliza um scraper para obter informações atualizadas sobre os filmes em cartaz no cinema, apresentando-as em uma interface visual e responsiva.
+
+---
+
+## 🔍 Pré-visualização
+
+Abaixo está uma prévia da interface do projeto:
+
+![Filmes em Cartaz Preview](https://github.com/user-attachments/assets/437eb1c0-f08e-4d0b-bac4-9ae0737abca5)
 
 ---
 
@@ -26,8 +34,8 @@ Este é um projeto de frontend que utiliza um scraper para obter informações a
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/filmes-em-cartaz.git
-   cd filmes-em-cartaz
+   git clone https://github.com/thiago-ribeiro1/movies.git
+   cd movies
    ```
 
 2. Instale as dependências:
@@ -37,47 +45,13 @@ Este é um projeto de frontend que utiliza um scraper para obter informações a
 
 3. Inicie o servidor:
    ```bash
-   node app.js
+   node src/app.js
    ```
 
 4. Acesse o projeto em seu navegador:
    ```bash
    http://localhost:3000
    ```
-
----
-
-## 🗂 Estrutura do Projeto
-
-```
-├── public/
-│   └── index.html       # Página principal
-│   └── style.css        # Estilos da página
-├── routes/
-│   └── movies.js        # Rota para obter os filmes
-├── services/
-│   └── scraper.js       # Lógica de scraping
-├── app.js               # Configuração do servidor Express
-├── package.json         # Gerenciamento de dependências
-```
-
----
-
-## 🔍 Pré-visualização
-
-Abaixo está uma prévia da interface do projeto:
-
-![Filmes em Cartaz Preview](https://user-images.githubusercontent.com/seuusuario/preview.png)
-
----
-
-## 🤝 Contribuição
-
-1. Faça um fork do projeto.
-2. Crie sua feature branch (`git checkout -b feature/nova-feature`).
-3. Faça commit das alterações (`git commit -am 'Adiciona nova feature'`).
-4. Faça push para a branch (`git push origin feature/nova-feature`).
-5. Crie um Pull Request.
 
 ---
 
