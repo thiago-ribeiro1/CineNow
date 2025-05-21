@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/img/2798007.ico">
-  
-  <!-- Título -->
-  <title>Filmes em Cartaz</title>
-  <!-- Link do Bootstrap -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Importa a fonte Caveat do Google Fonts -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-    
-    /* Classe personalizada para o título */
-    .caveat-title {
-      font-family: "Caveat", cursive;
-      font-weight: 850; 
-      font-size: 3rem; 
-      font-style: normal;
-      color: white;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      keywords="CineNow, filmes, cinema, streaming, filmes em cartaz, estreia, movies, filmes lançamentos, download filmes, assistir filmes, filmes online"
+    />
+    <meta name="description" content="CineNow - Filmes em Cartaz" />
+    <meta name="author" content="Thiago Ribeiro" />
+    <meta
+      property="og:image"
+      content="https://www.cinenow.vercel.app/public/img/home-spider.jpg"
+    />
+    <title>CineNow</title>
 
-    .caveat-title2 {
-      font-family: "Caveat", cursive;
-      font-weight: 850; 
-      font-size: 3rem; 
-      font-style: normal;
-      color: black;
-    }
-  </style>
-  <link rel="stylesheet" href="./css/styles.css">
-  
-</head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <!-- Box Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/img/2798007.ico" />
+  </head>
+
   <body>
-    <div class="cursor"></div>
-    <div class="container mt-5">
-      <h1 class="text-center caveat-title">Filmes em Cartaz</h1>
-      <div class="row" id="movies-container">
-        <!-- Conteúdo gerado pelo scraper -->
-        <div id="movies-list" class="col-12 text-center caveat-title2"></div>
-      </div>
-    </div>
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./js/script.js"></script>
-    
-  </body>
-  
+    <!-- Navbar -->
+    <header>
+      <a href="#" class="logo"> <i class="bx bxs-movie"></i> CineNow </a>
+      <div class="bx bx-menu" id="menu-icon"></div>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="./js/script.js"></script>
-</body>
+      <!-- Menu -->
+      <ul class="navbar">
+        <li><a href="#" class="home-active">Home</a></li>
+        <li><a href="#movies">Em Cartaz</a></li>
+      </ul>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="container">
+        <img src="img/home-spider.jpg" alt="Banner principal" />
+      </div>
+    </section>
+
+    <!-- Seção de Filmes -->
+    <section class="movies" id="movies">
+      <h2 class="heading">Filmes em Cartaz</h2>
+      <div class="movies-container">
+        <!-- Os filmes serão inseridos aqui pelo JS -->
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Footer -->
+    <section class="footer">
+      <a href="#" class="logo"> <i class="bx bxs-movie"></i> CineNow </a>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>
+        &#169; developed by
+        <a href="https://github.com/thiago-ribeiro1" target="_blank">
+          thiago-ribeiro1</a
+        >
+      </p>
+    </div>
+
+    <!-- Script -->
+    <script src="main.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

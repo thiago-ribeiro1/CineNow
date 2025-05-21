@@ -25,7 +25,7 @@ body {
   position: relative;
 }
 
-/* Container principal */
+/* Container */
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -53,7 +53,7 @@ body {
   z-index: -1;
 }
 
-/* Título principal */
+/* Título */
 .main-title {
   font-family: 'Caveat', cursive;
   font-size: 4rem;
@@ -65,6 +65,27 @@ body {
   color: transparent;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   animation: titlePulse 2s ease-in-out infinite alternate;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000; 
+  overflow: hidden;
+}
+
+.home .container {
+  width: 100%;
+  height: 100%;
+}
+
+.home .container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Container dos filmes */
@@ -165,7 +186,7 @@ body {
   }
 }
 
-/* Media Queries */
+/* Media Queries Responsividade */
 @media (max-width: 1200px) {
   .movies-container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
