@@ -3,6 +3,8 @@
 
 Este é um projeto que utiliza um scraper para obter informações atualizadas sobre os filmes em cartaz no cinema, apresentando-as em uma interface visual e responsiva.
 
+![Acesse aqui](https://cinenowweb.vercel.app/)
+
 ---
 
 ## 🔍 Pré-visualização
