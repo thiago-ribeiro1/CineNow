@@ -1,5 +1,5 @@
 
-# 🎥 Filmes em Cartaz
+# 🎥 CineNow
 
 Este é um projeto que utiliza um scraper para obter informações atualizadas sobre os filmes em cartaz no cinema, apresentando-as em uma interface visual e responsiva.
 
@@ -9,7 +9,9 @@ Este é um projeto que utiliza um scraper para obter informações atualizadas s
 
 Abaixo está uma prévia da interface do projeto:
 
-![Filmes em Cartaz Preview](https://github.com/user-attachments/assets/4c3028b6-020d-41c8-890c-14ee3bcf8885)
+![Image](https://github.com/user-attachments/assets/b1fd665d-ad9e-42a6-aae8-56335ff12b47)
+<br>
+![Image](https://github.com/user-attachments/assets/f48d7f20-85b3-4d5d-8c60-8aa3dcff4237)
 
 ---
 
@@ -34,7 +36,7 @@ Abaixo está uma prévia da interface do projeto:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/thiago-ribeiro1/movies.git
+   git clone https://github.com/thiago-ribeiro1/CineNow.git
    cd movies
    ```
 
