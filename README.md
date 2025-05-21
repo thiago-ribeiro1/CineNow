@@ -39,7 +39,7 @@ Abaixo está uma prévia da interface do projeto:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/thiago-ribeiro1/CineNow.git
-   cd movies
+   cd CineNow
    ```
 
 2. Instale as dependências:
