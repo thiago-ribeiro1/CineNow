@@ -1,5 +1,6 @@
 const express = require("express");
 const moviesRoute = require("./routes/movies");
+const newsRoute = require("./routes/news");
 const path = require("path");
 
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Rotas
 app.use("/movies", moviesRoute);
+app.use("/news", newsRoute);
 
 // Inicializando o servidor
 app.listen(PORT, () => {

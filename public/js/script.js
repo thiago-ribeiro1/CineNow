@@ -26,4 +26,36 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error("Erro ao carregar filmes:", err);
     container.innerHTML = "<p>Erro ao carregar filmes em cartaz.</p>";
   }
+
+const newsContainer = document.querySelector("#news .news-container");
+
+if (newsContainer) {
+  try {
+    const res = await fetch("/news");
+    const newsList = await res.json();
+
+    newsContainer.innerHTML = "";
+
+    newsList.forEach((news) => {
+      const card = document.createElement("div");
+      card.className = "box news-card";
+
+      card.innerHTML = `
+        <div class="box-img">
+          <img src="${news.imageUrl}" alt="${news.title}">
+        </div>
+        <h3>${news.title}</h3>
+        <a href="${news.detailsUrl}" target="_blank" class="watch-btn">
+          Veja mais
+        </a>
+      `;
+
+      newsContainer.appendChild(card);
+    });
+  } catch (err) {
+    console.error("Erro ao carregar notícias:", err);
+    newsContainer.innerHTML = "<p>Erro ao carregar notícias.</p>";
+  }
+}
 });
+
