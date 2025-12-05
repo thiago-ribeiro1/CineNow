@@ -44,7 +44,7 @@ async function scrapeNews() {
       }
     );
 
-    return news;
+    return news.slice(0, 30); // Limitar a 30 notícias;
   } catch (error) {
     console.error("Erro ao fazer scraping de notícias:", error.message);
     return [];
